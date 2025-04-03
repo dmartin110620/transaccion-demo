@@ -43,5 +43,6 @@ public class TransferService {
         IntStream.range(0, 1000).forEach(i -> executor.execute(() -> transferir("abc", "cbd", 10)));
 
         executor.shutdown();
+        System.out.println("Transferencias finalizadas.");
     }
 }
